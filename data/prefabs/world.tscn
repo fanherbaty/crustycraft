@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://mvefdyryvr6c"]
+
+[ext_resource type="PackedScene" uid="uid://du8eyhlr3bjd3" path="res://data/prefabs/world_gen.tscn" id="2_2sf6c"]
+[ext_resource type="Script" path="res://data/prefabs/world.gd" id="2_q2t4j"]
+[ext_resource type="PackedScene" uid="uid://bi208x8jxu5kc" path="res://data/prefabs/ent/player.tscn" id="3_bum6t"]
+[ext_resource type="PackedScene" uid="uid://bss2kjdrf80ur" path="res://data/ui.tscn" id="4_srnyp"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("2_q2t4j")
+
+[node name="TileMap" parent="." instance=ExtResource("2_2sf6c")]
+layer_1/modulate = Color(0.611765, 0.611765, 0.611765, 1)
+
+[node name="Player" parent="." instance=ExtResource("3_bum6t")]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[node name="UI" parent="." instance=ExtResource("4_srnyp")]
