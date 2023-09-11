@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmaj58w6ujcxo"]
+
+[ext_resource type="Texture2D" uid="uid://xrdhx8scj4pa" path="res://promo.png" id="1_2121s"]
+[ext_resource type="Script" path="res://data/splash.gd" id="1_y64io"]
+[ext_resource type="AudioStream" uid="uid://bsjo6ryp0qss2" path="res://assets/sfx/splash/gongaga.wav" id="3_0aeko"]
+
+[node name="Splash" type="Node2D"]
+script = ExtResource("1_y64io")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 480.0
+offset_bottom = 270.0
+color = Color(0.286275, 0.254902, 0.509804, 1)
+
+[node name="Logo" type="TextureRect" parent="."]
+offset_right = 480.0
+offset_bottom = 270.0
+texture = ExtResource("1_2121s")
+stretch_mode = 3
+
+[node name="Node" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0aeko")
+autoplay = true
+
+[connection signal="finished" from="Node" to="." method="audio_finished"]

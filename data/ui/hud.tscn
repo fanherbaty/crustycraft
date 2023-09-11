@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=3 uid="uid://doawimkphieop"]
+
+[ext_resource type="Texture2D" uid="uid://ca0k62jw5jk33" path="res://assets/ui/slot_sheet.png" id="1_2i3ln"]
+
+[node name="UI" type="CanvasLayer"]
+metadata/_edit_vertical_guides_ = []
+
+[node name="Hotbar" type="Node2D" parent="."]
+position = Vector2(241, 263)
+
+[node name="Slot" type="Sprite2D" parent="Hotbar"]
+position = Vector2(-58, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot2" type="Sprite2D" parent="Hotbar"]
+position = Vector2(-45, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot3" type="Sprite2D" parent="Hotbar"]
+position = Vector2(-32, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot4" type="Sprite2D" parent="Hotbar"]
+position = Vector2(-19, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot5" type="Sprite2D" parent="Hotbar"]
+position = Vector2(-6, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot6" type="Sprite2D" parent="Hotbar"]
+position = Vector2(7, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot7" type="Sprite2D" parent="Hotbar"]
+position = Vector2(20, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot8" type="Sprite2D" parent="Hotbar"]
+position = Vector2(33, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot9" type="Sprite2D" parent="Hotbar"]
+position = Vector2(46, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Slot10" type="Sprite2D" parent="Hotbar"]
+position = Vector2(59, 0)
+texture = ExtResource("1_2i3ln")
+hframes = 2
+vframes = 2
+
+[node name="Node2D" type="Node2D" parent="Hotbar"]
+visible = false
+
+[node name="Label2" type="Label" parent="Hotbar/Node2D"]
+modulate = Color(0, 0, 0, 0.498039)
+offset_left = -63.0
+offset_top = -21.0
+offset_right = 66.0
+offset_bottom = -7.0
+text = "Wooden Pickaxe"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Hotbar/Node2D"]
+offset_left = -64.0
+offset_top = -22.0
+offset_right = 65.0
+offset_bottom = -8.0
+text = "Wooden Pickaxe"
+horizontal_alignment = 1

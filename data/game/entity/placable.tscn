@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx4xe2clwnclu"]
+
+[ext_resource type="TileSet" uid="uid://dkeavnwk4v02j" path="res://data/game/building.tres" id="1_13pht"]
+
+[node name="Placable" type="TileMap"]
+y_sort_enabled = true
+tile_set = ExtResource("1_13pht")
+format = 2
